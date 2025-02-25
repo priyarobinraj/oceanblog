@@ -7,7 +7,7 @@ const Travelguides: React.FC = () => {
         <div
           className="head text-white px-9"
           style={{
-            backgroundImage: "url(/images/banner.jpeg')",
+            backgroundImage: "url('/images/banner2.jpeg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
