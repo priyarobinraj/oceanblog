@@ -7,7 +7,7 @@ const Travelguides: React.FC = () => {
         <div
           className="head text-white px-9"
           style={{
-            backgroundImage: "url('/src/images/banner2.jpeg')",
+            backgroundImage: "url(/images/banner2.jpeg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -24,7 +24,7 @@ const Travelguides: React.FC = () => {
             <div
               className="text-white py-40 text-center"
               style={{
-                backgroundImage: "url('/src/images/amalfi.jpeg')",
+                backgroundImage: "url('/images/amalfi.jpeg')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
@@ -41,7 +41,7 @@ const Travelguides: React.FC = () => {
             <div
               className="text-white py-40 text-center"
               style={{
-                backgroundImage: "url('/src/images/maldives.jpeg')",
+                backgroundImage: "url('/images/maldives.jpeg')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
@@ -59,7 +59,7 @@ const Travelguides: React.FC = () => {
             <div
               className="text-white py-40 text-center"
               style={{
-                backgroundImage: "url('/src/images/bora bora.jpeg')",
+                backgroundImage: "url('/images/bora bora.jpeg')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
@@ -74,7 +74,7 @@ const Travelguides: React.FC = () => {
             <div
               className="text-white py-40 text-center w-2/3"
               style={{
-                backgroundImage: "url('/src/images/venice.jpeg')",
+                backgroundImage: "url('/images/venice.jpeg')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}

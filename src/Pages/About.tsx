@@ -7,7 +7,7 @@ const About: React.FC = () => {
         <div
           className="head text-black px-9"
           style={{
-            backgroundImage: "url('/src/images/banner.jpeg')",
+            backgroundImage: "url('../images/banner.jpeg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -31,7 +31,7 @@ const About: React.FC = () => {
             </div>
             <div className="flex flex-col gap-3">
               <div className="flex flex-row w-5/6 mx-auto gap-40">
-                <img src="/src/images/img1.webp" alt="img1" className="w-60" />
+                <img src="/images/img1.webp" alt="img1" className="w-60" />
                 <div className="w-1/2 flex flex-col gap-4 justify-center items-center text-center">
                   <h3 className="font-bold text-3xl">John Doe - Founder</h3>
                   <p className=" text-xl">
@@ -42,7 +42,7 @@ const About: React.FC = () => {
                 </div>
               </div>
               <div className="flex flex-row-reverse w-5/6 mx-auto gap-40">
-                <img src="/src/images/img2.webp" alt="img2" className="w-60" />
+                <img src="/images/img2.webp" alt="img2" className="w-60" />
                 <div className="w-1/2 flex flex-col gap-4 justify-center items-center text-center">
                   <h3 className="font-bold text-3xl">
                     Jane Smith - Content Editor
@@ -56,7 +56,7 @@ const About: React.FC = () => {
                 </div>
               </div>
               <div className="flex flex-row w-5/6 mx-auto gap-40">
-                <img src="/src/images/img3.webp" alt="img3" className="w-60" />
+                <img src="/images/img3.webp" alt="img3" className="w-60" />
                 <div className="w-1/2 flex flex-col gap-4 justify-center items-center text-center">
                   <h3 className="font-bold text-3xl">
                     Emily Johnson - Community Manager
@@ -84,7 +84,7 @@ const About: React.FC = () => {
           <div className="flex flex-row gap-20 text-center justify-center ">
             <div className="flex flex-col items-center bg-white text-black px-5 py-4 border-2 border-gray-400">
               <img
-                src="/src/images/about1.webp"
+                src="/images/about1.webp"
                 alt="about1 img"
                 className="w-64 "
               />
@@ -101,7 +101,7 @@ const About: React.FC = () => {
             </div>
             <div className="flex flex-col items-center bg-white text-black px-5 py-4 border-2 border-gray-400">
               <img
-                src="/src/images/about2.webp"
+                src="/images/about2.webp"
                 alt="about2 img"
                 className="w-64"
               />
@@ -118,7 +118,7 @@ const About: React.FC = () => {
             </div>
             <div className="flex flex-col items-center bg-white text-black px-5 py-4 border-2 border-gray-400">
               <img
-                src="/src/images/about3.webp"
+                src="/images/about3.webp"
                 alt="about3 img"
                 className="w-64"
               />

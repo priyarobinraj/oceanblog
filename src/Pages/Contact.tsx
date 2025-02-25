@@ -6,7 +6,7 @@ const Contact: React.FC = () => {
       <div
         className="head text-white px-9"
         style={{
-          backgroundImage: "url('/src/images/con_bg.jpeg')",
+          backgroundImage: "url('/images/con_bg.jpeg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -26,11 +26,7 @@ const Contact: React.FC = () => {
         </div>
         <div className="flex flex-row gap-20 text-center justify-center ">
           <div className="flex flex-col items-center bg-white text-black px-5 py-4 border-2 border-gray-400">
-            <img
-              src="/src/images/loc1.webp"
-              alt="about1 img"
-              className="w-64 "
-            />
+            <img src="/images/loc1.webp" alt="about1 img" className="w-64 " />
             <h3 className="font-bold pb-2 text-xl">Location</h3>
             <p className="w-48">
               Our office is located in the heart of the coastal city, just a
@@ -41,11 +37,7 @@ const Contact: React.FC = () => {
             </p>
           </div>
           <div className="flex flex-col items-center bg-white text-black px-5 py-4 border-2 border-gray-400">
-            <img
-              src="/src/images/loc2.webp"
-              alt="about2 img"
-              className="w-64"
-            />
+            <img src="/images/loc2.webp" alt="about2 img" className="w-64" />
             <h3 className="font-bold pb-2 text-xl w-56">Business Hours</h3>
             <p className="w-48">
               We are open from Monday to Friday, 9 AM to 5 PM, ensuring that we
@@ -56,11 +48,7 @@ const Contact: React.FC = () => {
             </p>
           </div>
           <div className="flex flex-col items-center bg-white text-black px-5 py-4 border-2 border-gray-400">
-            <img
-              src="/src/images/loc3.webp"
-              alt="about3 img"
-              className="w-64"
-            />
+            <img src="/images/loc3.webp" alt="about3 img" className="w-64" />
             <h3 className="font-bold pb-2 text-xl w-56">Parking Information</h3>
             <p className="w-56">
               Ample parking is available in the vicinity of our office, making

@@ -6,7 +6,7 @@ const Home: React.FC = () => {
       <div
         className="head text-white px-9"
         style={{
-          backgroundImage: "url('/src/images/home_bg.jpeg')",
+          backgroundImage: "url('/images/home_bg.jpeg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -32,7 +32,7 @@ const Home: React.FC = () => {
       </div>
       <div className="flex flex-row justify-start gap-12 pl-9 " id="home">
         <div className="w-96">
-          <img src="/src/images/Underwater Scuba Dive.jpeg" alt="scuba" />
+          <img src="/images/Underwater Scuba Dive.jpeg" alt="scuba" />
         </div>
         <div className="w-1/2 flex flex-col justify-center items-center text-center">
           <h2 className="text-4xl font-bold pb-3">
@@ -68,7 +68,7 @@ const Home: React.FC = () => {
         </div>
         <div className="flex flex-col gap-12">
           <div className="flex flex-row w-5/6 mx-auto gap-40">
-            <img src="/src/images/img_1.webp" alt="img1" className="w-60" />
+            <img src="/images/img_1.webp" alt="img1" className="w-60" />
             <div className="w-1/2 flex flex-col gap-4 justify-center items-center text-center">
               <h3 className="font-bold text-3xl">Pack Smart for the Ocean</h3>
               <p className=" text-xl">
@@ -80,7 +80,7 @@ const Home: React.FC = () => {
             </div>
           </div>
           <div className="flex flex-row-reverse w-5/6 mx-auto gap-40">
-            <img src="/src/images/img_2.webp" alt="img2" className="w-60" />
+            <img src="/images/img_2.webp" alt="img2" className="w-60" />
             <div className="w-1/2 flex flex-col gap-4 justify-center items-center text-center">
               <h3 className="font-bold text-3xl">Stay Safe While Exploring</h3>
               <p className=" text-xl">
@@ -92,7 +92,7 @@ const Home: React.FC = () => {
             </div>
           </div>
           <div className="flex flex-row w-5/6 mx-auto gap-40">
-            <img src="/src/images/img_3.webp" alt="img3" className="w-60" />
+            <img src="/images/img_3.webp" alt="img3" className="w-60" />
             <div className="w-1/2 flex flex-col gap-4 justify-center items-center text-center">
               <h3 className="font-bold text-3xl">Respect Marine Life</h3>
               <p className=" text-xl">
