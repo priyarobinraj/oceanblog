@@ -26,7 +26,7 @@ const Header: React.FC = () => {
           : "bg-transparent text-white"
       }`}
     >
-      <div className="flex items-center justify-between px-4 xs:px-6 sm:px-9">
+      <div className="relative flex items-center justify-between px-4 xs:px-6 sm:px-9">
         <div
           className={`font-bold text-lg xs:text-xl sm:text-2xl transition-colors duration-300 ease-in-out ${
             isScrolled ? "text-black" : "text-white"
@@ -35,8 +35,7 @@ const Header: React.FC = () => {
           Ocean Blog
         </div>
 
-        {/* Hamburger Menu Button */}
-        <div className="sm:hidden">
+        <div className="sm:hidden relative z-20">
           <button
             onClick={toggleMenu}
             className={`focus:outline-none ${
@@ -63,14 +62,14 @@ const Header: React.FC = () => {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16" // All lines are 16 units long
+                  d="M4 6h16M4 12h16M4 18h16"
                 />
               )}
             </svg>
           </button>
         </div>
 
-        {/* Desktop Navigation */}
+        {/* Desktop Menu */}
         <div className="hidden sm:flex sm:gap-6">
           <ul className="flex gap-4 xs:gap-5 sm:gap-6 text-lg xs:text-xl sm:text-2xl font-mono">
             <li className="relative group">
@@ -127,21 +126,23 @@ const Header: React.FC = () => {
             </li>
           </ul>
         </div>
-      </div>
 
-      {/* Mobile Menu */}
-      {isMenuOpen && (
+        {/* Mobile Menu */}
         <div
-          className={`sm:hidden absolute top-full left-0 w-full ${
+          className={`sm:hidden absolute -top-2 xs:-top-3 sm:-top-4 left-0 w-full ${
             isScrolled ? "bg-white text-black" : "bg-gray-900 text-white"
-          } shadow-lg transition-all duration-300 ease-in-out`}
+          } shadow-lg transition-all duration-500 ease-in-out transform ${
+            isMenuOpen
+              ? "translate-y-0 opacity-100"
+              : "-translate-y-full opacity-0"
+          } z-10`}
         >
-          <ul className="flex flex-col items-center gap-4 py-4 text-lg xs:text-xl font-mono">
+          <ul className="flex flex-col items-center gap-4 py-12 text-lg xs:text-xl font-mono">
             <li>
               <Link
                 to="/"
                 onClick={toggleMenu}
-                className="py-2 px-4 hover:bg-gray-200 hover:text-black rounded"
+                className="py-2 px-4 hover:bg-white hover:text-black rounded"
               >
                 Home
               </Link>
@@ -150,7 +151,7 @@ const Header: React.FC = () => {
               <Link
                 to="/about"
                 onClick={toggleMenu}
-                className="py-2 px-4 hover:bg-gray-200 hover:text-black rounded"
+                className="py-2 px-4 hover:bg-white hover:text-black rounded"
               >
                 AboutUs
               </Link>
@@ -159,7 +160,7 @@ const Header: React.FC = () => {
               <Link
                 to="/travel"
                 onClick={toggleMenu}
-                className="py-2 px-4 hover:bg-gray-200 hover:text-black rounded"
+                className="py-2 px-4 hover:bg-white hover:text-black rounded"
               >
                 TravelGuides
               </Link>
@@ -168,14 +169,14 @@ const Header: React.FC = () => {
               <Link
                 to="/contact"
                 onClick={toggleMenu}
-                className="py-2 px-4 hover:bg-gray-200 hover:text-black rounded"
+                className="py-2 px-4 hover:bg-white hover:text-black rounded"
               >
                 Contact
               </Link>
             </li>
           </ul>
         </div>
-      )}
+      </div>
     </div>
   );
 };
