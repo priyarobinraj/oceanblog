@@ -27,12 +27,22 @@ const Header: React.FC = () => {
       }`}
     >
       <div className="relative flex items-center justify-between px-4 xs:px-6 sm:px-9">
-        <div
-          className={`font-bold text-lg xs:text-xl sm:text-2xl transition-colors duration-300 ease-in-out ${
-            isScrolled ? "text-black" : "text-white"
-          }`}
-        >
-          Ocean Blog
+        <div className="flex items-center gap-4">
+          <a
+            href="https://your-portfolio.vercel.app/#projects"
+            className={`transition-colors duration-300 ease-in-out ${
+              isScrolled ? "text-black" : "text-white"
+            } font-mono text-sm xs:text-base`}
+          >
+            ← Back
+          </a>
+          <div
+            className={`font-bold text-lg xs:text-xl sm:text-2xl transition-colors duration-300 ease-in-out ${
+              isScrolled ? "text-black" : "text-white"
+            }`}
+          >
+            Ocean Blog
+          </div>
         </div>
 
         <div className="sm:hidden relative z-20">
