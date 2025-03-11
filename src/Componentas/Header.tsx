@@ -29,7 +29,7 @@ const Header: React.FC = () => {
       <div className="relative flex items-center justify-between px-4 xs:px-6 sm:px-9">
         <div className="flex items-center gap-4">
           <a
-            href="https://your-portfolio.vercel.app/#projects"
+            href="https://portfolio-ruby-alpha-66.vercel.app/"
             className={`transition-colors duration-300 ease-in-out ${
               isScrolled ? "text-black" : "text-white"
             } font-mono text-sm xs:text-base`}
